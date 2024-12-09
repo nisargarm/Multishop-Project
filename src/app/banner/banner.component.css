@@ -17,4 +17,18 @@
     height: 100%; 
     object-fit: cover; 
   }
+  *, ::before, ::after {
+    box-sizing: border-box;
+}
+.container-fluid {
+    background-color: #f9f9f9;
+    padding: 30px 30px;
+}
+.carousel-item{
+    
+    background-color: rgba(0, 0, 0, 0.4);  
+
+
+}
+
   

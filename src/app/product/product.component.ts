@@ -8,6 +8,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  @Input() product: any;
+  name!: string;
+  image!: string;
+  price!: number;
+  rating!: number;
+  
 
 }

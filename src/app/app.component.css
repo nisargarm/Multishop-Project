@@ -1,15 +1,16 @@
 .image-container {
     display: flex;
-    justify-content: space-between;  
-    align-items: center;  
-    gap: 20px;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-  }
-  
-  .image-container app-special-offer {
-    width: 48%;  
-  }
-  .container {
+}
+
+.image-container app-special-offer {
+    width: 48%;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -25,6 +26,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
 @media (max-width: 768px) {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
@@ -39,21 +41,20 @@ h1 {
 
 .image-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;  
-    gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-  }
-  
-  app-special-offer {
-    width: 48%;  
-    max-height: 300px;  
-    overflow: hidden;  
-  }
-  
-  app-special-offer img {
-    width: 100%; 
-    height: 100%; 
+}
+
+app-special-offer {
+    width: 48%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+app-special-offer img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-  }
-  
+}
