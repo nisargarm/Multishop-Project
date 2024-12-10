@@ -1,18 +1,70 @@
-<nav class="navbar navbar-light bg-white py-3">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+Top Bar
+<div class="bg-light py-2 border-bottom">
+    <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+         <div class="d-flex mb-2 mb-lg-0">
+            <a href="#" class="text-secondary text-decoration-none me-3">About</a>
+            <a href="#" class="text-secondary text-decoration-none me-3">Contact</a>
+            <a href="#" class="text-secondary text-decoration-none me-3">Help</a>
+            <a href="#" class="text-secondary text-decoration-none">FAQs</a>
+        </div>
+
         <div class="d-flex align-items-center">
+            <div class="dropdown me-3">
+                <a href="#" class="text-secondary dropdown-toggle text-decoration-none bg-white py-2 px-3 rounded"
+                    id="myAccountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="myAccountDropdown">
+                    <li><a class="dropdown-item" href="#">Sign in</a></li>
+                    <li><a class="dropdown-item" href="#">Sign up</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown me-3">
+                <a href="#" class="text-secondary dropdown-toggle text-decoration-none bg-white py-2 px-3 rounded"
+                    id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    USD
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <li><a class="dropdown-item" href="#">USD</a></li>
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="text-secondary dropdown-toggle text-decoration-none bg-white py-2 px-3 rounded"
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">FR</a></li>
+                    <li><a class="dropdown-item" href="#">ES</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-light bg-white py-3">
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+        <div class="d-flex align-items-center mb-2 mb-lg-0">
             <div class="bg-dark text-warning px-2 py-1" style="font-size: 1.5rem; font-weight: bold;">MULTI</div>
             <div class="bg-warning text-dark px-2 py-1" style="font-size: 1.5rem; font-weight: bold;">SHOP</div>
         </div>
 
-
-        <form class="d-flex" style="width: 50%; max-width: 600px;">
+        <form class="d-flex mb-2 mb-lg-0" style="width: 100%; max-width: 400px;">
             <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search"
-                style="border: 1px solid #ccc;">
-            <button class="btn btn-outline-warning" type="submit">
-                <i class="bi bi-search" style="color: #f1c40f;"></i>
+                style="border: 1px solid #ccc; border-radius: 0; height: 35px;">
+            <button class="btn btn-outline-warning" type="submit" style="border-radius: 0;">
+                <i class="bi bi-search" style="color: #f1c40f; font-size: 16px;"></i>
             </button>
         </form>
+        <div class="text-end">
+            <div class="text-secondary" style="font-size: 0.9rem;">Customer Service</div>
+            <div class="fw-bold" style="font-size: 1.2rem;">+012 345 6789</div>
+        </div>
     </div>
 </nav>
 
