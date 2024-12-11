@@ -1,38 +1,106 @@
- .categories-section {
+.categories-section {
     background-color: #f9f9f9;
     padding: 30px 0;
- }
-
- .categories-section .container {
-    padding-left: 15px;  
-    padding-right: 15px;  
 }
-  
- .categories-section .section-title {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: left;
-      margin-bottom: 20px;
-       display: inline-block;
-      padding-bottom: 10px;
-    }
 
-    .categories-section .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-title .line {
+    flex-grow: 1;
+    height: 1px;
+    background: #999;
     
- 
+}
 
- .rating {
-    color: #ffc107;  
-    font-size: 24px;  
+.rating {
+    color: #ffc107;
+    font-size: 24px;
     display: inline-block;
-    margin-right: 5px;  
+    margin-right: 5px;
 }
 
 .rating small {
-    font-size: 14px;  
-    color: #666;  
-
+    font-size: 14px;
+    color: #666;
 }
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-img img:hover {
+    transform: scale(1.1);
+}
+
+.text-center a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.featured-products-header {
+    padding-left: 50px;  
+}
+
+
+.featured-products-header{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+  
+  .featured-products-header h2 { 
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+
+  }
+
+  
+  
+  .category-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px dotted #635f5fd7;  
+    margin-left: 1px;
+  }
+
+.text-center h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.text-center h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+

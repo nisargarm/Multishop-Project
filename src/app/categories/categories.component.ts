@@ -16,3 +16,6 @@ export class CategoriesComponent {
     { name: 'Category Name 4', products: 100, image: 'assets/images/category4.jpg' },
   ];
 }
+
+
+ 
