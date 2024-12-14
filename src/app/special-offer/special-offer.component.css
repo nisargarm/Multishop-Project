@@ -5,7 +5,8 @@
 
 .container {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
+    padding-left: 15px;
 }
 
 .row {
@@ -19,7 +20,6 @@
     position: relative;
     height: 250px;
     margin: 0 auto;
-
 }
 
 .product-offer img {
@@ -37,7 +37,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 15px;
 }
@@ -63,15 +62,23 @@
     padding: 10px 20px;
 }
 
-container {
-    max-width: 100%;
-    padding: 1px 15px;
-}
-
-
 @media (max-width: 768px) {
+    .col-12 {
+        padding: 0 15px;
+    }
+
     .product-offer {
-        max-width: 300px;
-        margin: 0 auto;
+
+        max-width: 100%;
+        height: 200px;
+        padding-bottom: 5%;
+    }
+
+    .offer-text h3 {
+        font-size: 20px;
+    }
+
+    .offer-text .btn {
+        font-size: 12px;
     }
 }

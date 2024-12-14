@@ -1,11 +1,9 @@
- .features-section {
+.features-section {
     background-color: #f9f9f9;
     padding: 30px 0;
-    margin-left: 0%;
     width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
-   
+    padding-right: 50px;
+    padding-left: 50px;
 
     .row {
         display: flex;
@@ -15,15 +13,14 @@
 
     .feature-item {
         flex: 1;
-        max-width: 22%;
+        max-width: 100%;
         display: flex;
-        align-items: center; 
-        justify-content: center; 
+        align-items: center;
+        justify-content: center;
         text-align: center;
         padding: 20px;
         background-color: #fff;
-         margin: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 10px;
         transition: transform 0.3s;
 
         &:hover {
@@ -33,29 +30,59 @@
         .feature-icon {
             font-size: 40px;
             color: #ffd700;
-            margin-right: 10px;  
+            margin-right: 10px;
         }
 
         h5 {
             font-size: 18px;
             color: #333;
-            margin: 0;  
+            margin: 0;
         }
     }
 
     @media (max-width: 768px) {
         .feature-item {
-            max-width: 45%;
+            max-width: 100%;
+            flex: 1 1 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .feature-icon {
+            font-size: 50px;
+        }
+
+        h5 {
+            font-size: 22px;
+        }
+
+        .container {
+
+            padding-left: 1px;
+            padding-right: 1px;
         }
     }
 
     @media (max-width: 576px) {
         .feature-item {
             max-width: 100%;
+            padding: 35px;
+            margin: 5px;
+        }
+
+        .feature-icon {
+            font-size: 55px;
+        }
+
+        h5 {
+            font-size: 24px;
         }
     }
 }
-.container{
-    max-width: 100%; /*padd arran.....*/
-    padding: 0 15px; 
+.container {
+    max-width: 100%;
+    padding: 0 15px;
 }

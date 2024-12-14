@@ -4,20 +4,24 @@
 }
 
 .section-title {
-    display: flex;
-    align-items: center;
+
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
     color: #333;
+    padding-bottom: 10px;
+
 }
 
 .section-title .line {
     flex-grow: 1;
     height: 1px;
     background: #999;
-    
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+
 }
 
 .rating {
@@ -39,9 +43,8 @@
 
 .product-item {
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .product-img img {
@@ -64,33 +67,38 @@
 }
 
 .featured-products-header {
-    padding-left: 50px;  
+    padding-left: 50px;
+    width: 96%;
 }
 
 
-.featured-products-header{ 
+.featured-products-header {
     display: flex;
     align-items: center;
     gap: 10px;
-   }
-  
-  .featured-products-header h2 { 
+}
+
+.featured-products-header h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin: 0;
     white-space: nowrap;
 
-  }
+}
 
-  
-  
-  .category-line {
+
+
+.category-line {
     flex-grow: 1;
     border: none;
-    border-top: 2px dotted #635f5fd7;  
+    content: "";
+    flex-grow: 1;
+    width: 80%;
+    height: 1px;
+    background-color: #201f1f;
     margin-left: 1px;
-  }
+}
 
 .text-center h5 {
     margin: 0;
@@ -104,3 +112,46 @@
     color: #888;
 }
 
+@media (max-width: 768px) {
+
+    .col-lg-3,
+    .col-md-4,
+    .col-sm-6 {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .product-item {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .product-img {
+        padding-bottom: 0;
+    }
+
+    .top {
+        padding-top: 20px;
+    }
+
+    .section-title {
+        right: 50%;
+        left: 50%;
+    }
+}
