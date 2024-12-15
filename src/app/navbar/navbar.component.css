@@ -59,8 +59,15 @@
   padding-top: 4px !important;
   padding-bottom: 4px !important;
 }
+/* .brand {
+  display: none !important;
+} */
 
 @media (max-width: 768px) {
+  .search-bar, .text-end,  .categories-dropdown ,.logo{
+    display: none !important;
+  }
+
   .bg-light .container-fluid {
     flex-direction: column;
     align-items: flex-start;
