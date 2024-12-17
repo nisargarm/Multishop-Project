@@ -1,8 +1,4 @@
-.footer .col-md-3 {
-    margin-bottom: 30px;  
-}
-
- .footer {
+.footer {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #333;
@@ -79,20 +75,53 @@
     }
 
     .footer .col-md-3 {
-        width: 48%; 
+        width: 48%;  
         margin-bottom: 20px;
     }
 
-    .newsletter-input input  {
-        display: none !important; 
-    }
-    .form-control{
-        display: none !important; 
+    .newsletter-input input {
+        padding-top: 1%;
+        padding-bottom: 10; 
     }
 
     .footer .newsletter-input button {
         width: 0%;  
     }
+    .action{
+        display: none !important;
+    }
 
 }
- 
+ .footer .col-md-3 {
+    margin-bottom: 30px;  
+}
+
+ @media (max-width: 768px) {
+    .footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer .col-md-3 {
+        width: 48%;  
+        margin-bottom: 20px; 
+    }
+
+    .footer .newsletter-input input {
+        width: 70% ;
+    }
+
+    .footer .newsletter-input button {
+        width: 28%; 
+    }
+
+    .footer .social-icons {
+        margin-top: 10px;
+    }
+}
+.container{
+    max-width: 100%;
+    padding: 0 60px; 
+    padding-right: 60px;
+}
